@@ -17,7 +17,6 @@ Submitted to IEEE International Conference on Robotics and Automation (ICRA 2027
 <div align="center">
 
 ### ▶️ [Watch the supplementary video](video/video.mp4)
-
 </div>
 
 
