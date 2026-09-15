@@ -71,8 +71,8 @@ The evaluation includes:
 </p>
 
 ### Key Results
-<img src="figures/active_configuration_results_4K.gif" width="100%">
-<img src="figures/ros_simulation_results_4K.gif" width="100%">
+<img src="figures/active_configuration_results.gif" width="100%">
+<img src="figures/ros_simulation_results.gif" width="100%">
 
 ## Citation
 If you find this work useful, please consider citing the paper. 
