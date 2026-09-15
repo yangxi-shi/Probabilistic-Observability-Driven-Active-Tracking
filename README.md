@@ -2,86 +2,62 @@
 
 # Probabilistic Observability-Driven Active Target Tracking and Planning for UAV Swarms in Cluttered Environments
 
-Submitted to IEEE International Conference on Robotics and Automation (ICRA 2027), under review.
-
-
-
+Anonymous Authors
+Submitted to IEEE International Conference on Robotics and Automation (ICRA 2027)
+Under Review
 <p align="center">
   <img src="figures/demo.png" width="95%">
 </p>
 
 </div>
 
-## Video
+## Demo Video
 
+<p align="center">
+  <a href="video/video.mp4">
+    <img src="figures/video_cover.png" width="100%" alt="Supplementary Video">
+  </a>
+</p>
 
+<p align="center">
+  <b>▶ Click the image to watch the supplementary video</b>
+</p>
 
-<!-- <video width="1920" height="1080" src="https://github.com/user-attachments/assets/6640b218-fb03-4812-957e-9adfa99b965f"></video> -->
-
-<div align="center">
-
-### ▶️ [Watch the supplementary video](video/video.mp4)
-</div>
-
-
+## Source code
+Matlab and ROS source code will be released after the paper is accepted.
 
 
 ## Abstract
 
-Maintaining target visibility does not necessarily ensure sufficient observability in cooperative bearing-only tracking, especially under intermittent occlusion and degraded observation geometry. This work presents a distributed active tracking framework integrating **effective-observation-aware DRLS-based estimation**, **probabilistic observability-driven active sensing configuration**, and **motion-primitive trajectory planning**.
+Maintaining target visibility does not necessarily ensure sufficient observability in cooperative bearing-only tracking, especially under intermittent occlusion and degraded observation geometry. 
+
+This work presents a distributed active tracking framework integrating **effective-observation-aware DRLS-based estimation**, **probabilistic observability-driven active sensing configuration**, and **motion-primitive trajectory planning**.
 
 Future joint information is predicted from shared target-motion scenarios, and the sensing configuration is optimized to maximize information utility subject to a prescribed probability bound on sufficient information along the weakest state direction. The optimized viewpoints are then realized by safe and dynamically feasible multi-UAV trajectories.
 
 Extensive numerical simulations, high-fidelity ROS simulations, and real-world flight experiments demonstrate improved tracking accuracy, stronger weakest-direction information, and enhanced robustness to occlusion and observation-geometry degradation.
-
-
-<!-- ## Method at a Glance
-
-```text
-Bearing Measurements        Odometry        Local Environment
-        │                       │                    │
-        ▼                       ▼                    ▼
-┌─────────────────┐   ┌──────────────────────┐   ┌────────────────────┐
-│ DRLS Estimation │ → │ Active Configuration │ → │ Motion-Primitive   │
-│                 │   │                      │   │ Trajectory Planning│
-└─────────────────┘   └──────────────────────┘   └────────────────────┘
-        │                       │                    │
-        └──────────── Distributed communication ─────┘
-```
-
-The central optimization maximizes overall information utility while enforcing a probabilistic lower bound on sufficient weakest-direction information. -->
-
-
 
 ## System Overview
 
 <p align="center">
   <img src="figures/system_overview_en.png" width="95%">
 </p>
-
 <div align="center">
 
 **Estimation → Active Sensing Configuration → Motion Planning**
 
 </div>
 
-Our framework integrates effective-observation-aware DRLS-based estimation,
-probabilistic observability-driven active sensing configuration, and
-motion-primitive trajectory planning in a distributed closed loop.
-
-- **Effective-observation-aware DRLS estimation** filters measurements using range, FoV, and LoS conditions and performs distributed information fusion.
-- **Probabilistic-observability-driven sensing configuration** propagates shared target-motion scenarios, predicts future joint information, and actively organizes target-relative viewpoints.
-- **Motion-primitive trajectory planning** realizes the optimized viewpoints through safe, dynamically feasible, receding-horizon multi-UAV motion.
-
-
-## Representative Experiments
+## Experiments
 
 The evaluation includes:
-- numerical validation of the distributed bearing-only estimator;
-- 100 paired Active/Fixed numerical trials;
+- Numerical validation of the distributed bearing-only estimator and 100 paired Active/Fixed numerical trials;
 - 40 paired high-fidelity ROS simulations with **2–6 UAVs** in cluttered environments;
-- real-world flights with three quadrotors tracking a moving ground target.
+- Real-world flights with three quadrotors tracking a moving ground target.
 
+<p align="center">
+  <img src="figures/1.png" width="95%">
+</p>
 
 <p align="center">
   <img src="figures/3-1.png" width="95%">
@@ -92,21 +68,12 @@ The evaluation includes:
 </p>
 
 ### Key Results
+<img src="figures/active_configuration_results_4K.gif" width="100%">
+<img src="figures/ros_simulation_results_4K.gif" width="100%">
 
-
-<img src="figures/active_configuration_results.gif" width="100%">
-<img src="figures/ros_simulation_results.gif" width="100%">
-
-
-
-
-
-
-
-<!-- ## Citation
-
+## Citation
 If you find this work useful, please consider citing the paper. 
-The final BibTeX entry can be updated after publication.
+The final BibTeX entry will be updated after publication.
 
 ```bibtex
 @inproceedings{probabilistic_observability_uav_tracking,
@@ -115,9 +82,4 @@ The final BibTeX entry can be updated after publication.
   booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation(Under Review)},
   year      = {2027}
 }
-``` -->
-
-<!-- 
-## Acknowledgment
-
-This repository accompanies the paper **“Probabilistic Observability-Driven Active Target Tracking and Planning for UAV Swarms in Cluttered Environments.”** -->
+```
