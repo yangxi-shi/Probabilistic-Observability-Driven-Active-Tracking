@@ -3,7 +3,9 @@
 # Probabilistic Observability-Driven Active Target Tracking and Planning for UAV Swarms in Cluttered Environments
 
 Anonymous Authors
+
 Submitted to IEEE International Conference on Robotics and Automation (ICRA 2027)
+
 Under Review
 <p align="center">
   <img src="figures/demo.png" width="95%">
@@ -19,9 +21,10 @@ Under Review
   </a>
 </p>
 
-<p align="center">
-  <b>▶ Click the image to watch the supplementary video</b>
-</p>
+<div align="center">
+
+### ▶️ [Click and watch the supplementary video](video/video.mp4)
+</div>
 
 ## Source code
 Matlab and ROS source code will be released after the paper is accepted.
