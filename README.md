@@ -4,11 +4,23 @@
 
 Submitted to IEEE International Conference on Robotics and Automation (ICRA 2027), under review.
 
+
+
 <p align="center">
   <img src="figures/demo.png" width="95%">
 </p>
 
 </div>
+
+## Video
+
+<div align="center">
+
+### ▶️ [Watch the supplementary video](video/video.mp4)
+
+</div>
+
+The video presents the full pipeline from distributed bearing-only estimation to probabilistic active sensing configuration and trajectory execution, together with numerical, ROS, and real-world experiments.
 
 
 
@@ -55,8 +67,6 @@ Our framework integrates effective-observation-aware DRLS-based estimation,
 probabilistic observability-driven active sensing configuration, and
 motion-primitive trajectory planning in a distributed closed loop.
 
-The framework consists of three tightly coupled components:
-
 - **Effective-observation-aware DRLS estimation** filters measurements using range, FoV, and LoS conditions and performs distributed information fusion.
 - **Probabilistic-observability-driven sensing configuration** propagates shared target-motion scenarios, predicts future joint information, and actively organizes target-relative viewpoints.
 - **Motion-primitive trajectory planning** realizes the optimized viewpoints through safe, dynamically feasible, receding-horizon multi-UAV motion.
@@ -65,10 +75,9 @@ The framework consists of three tightly coupled components:
 ## Representative Experiments
 
 The evaluation includes:
-
 - numerical validation of the distributed bearing-only estimator;
 - 100 paired Active/Fixed numerical trials;
-- high-fidelity ROS simulations with **2–6 UAVs** in cluttered environments;
+- 40 paired high-fidelity ROS simulations with **2–6 UAVs** in cluttered environments;
 - real-world flights with three quadrotors tracking a moving ground target.
 
 
@@ -82,30 +91,17 @@ The evaluation includes:
 
 ### Key Results
 
-| Metric | Result |
-|---|---:|
-| Mean position RMSE | **↓ 14.6%** |
-| P95 position RMSE | **↓ 27.8%** |
-| Mean minimum eigenvalue | **↑ 82.1%** |
-| Effective-observation rate | **86.89% → 95.01%** |
-| ROS team sizes | **2–6 UAVs** |
-| Real-world validation | **3 UAVs** |
 
-
-## Video
-
-<div align="center">
-
-### ▶️ [Watch the supplementary video](video/video.mp4)
-
-</div>
-
-The video presents the full pipeline from distributed bearing-only estimation to probabilistic active sensing configuration and trajectory execution, together with numerical, ROS, and real-world experiments.
+<img src="figures/active_configuration_results.gif" width="100%">
+<img src="figures/ros_simulation_results.gif" width="100%">
 
 
 
 
-## Citation
+
+
+
+<!-- ## Citation
 
 If you find this work useful, please consider citing the paper. 
 The final BibTeX entry can be updated after publication.
@@ -117,9 +113,9 @@ The final BibTeX entry can be updated after publication.
   booktitle = {Proceedings of the IEEE International Conference on Robotics and Automation(Under Review)},
   year      = {2027}
 }
-```
+``` -->
 
-
+<!-- 
 ## Acknowledgment
 
-This repository accompanies the paper **“Probabilistic Observability-Driven Active Target Tracking and Planning for UAV Swarms in Cluttered Environments.”**
+This repository accompanies the paper **“Probabilistic Observability-Driven Active Target Tracking and Planning for UAV Swarms in Cluttered Environments.”** -->
