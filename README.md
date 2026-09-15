@@ -20,7 +20,6 @@ Submitted to IEEE International Conference on Robotics and Automation (ICRA 2027
 
 </div>
 
-The video presents the full pipeline from distributed bearing-only estimation to probabilistic active sensing configuration and trajectory execution, together with numerical, ROS, and real-world experiments.
 
 
 
@@ -33,7 +32,7 @@ Future joint information is predicted from shared target-motion scenarios, and t
 Extensive numerical simulations, high-fidelity ROS simulations, and real-world flight experiments demonstrate improved tracking accuracy, stronger weakest-direction information, and enhanced robustness to occlusion and observation-geometry degradation.
 
 
-## Method at a Glance
+<!-- ## Method at a Glance
 
 ```text
 Bearing Measurements        Odometry        Local Environment
@@ -47,7 +46,7 @@ Bearing Measurements        Odometry        Local Environment
         └──────────── Distributed communication ─────┘
 ```
 
-The central optimization maximizes overall information utility while enforcing a probabilistic lower bound on sufficient weakest-direction information.
+The central optimization maximizes overall information utility while enforcing a probabilistic lower bound on sufficient weakest-direction information. -->
 
 
 
